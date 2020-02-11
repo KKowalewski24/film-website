@@ -1,7 +1,7 @@
 import React from "react";
 import propTypes from "prop-types";
 import ErrorMessage from "../error-message/ErrorMessage";
-// import LinearProgress from "@material-ui/core/LinearProgress";
+import LinearProgress from "@material-ui/core/LinearProgress";
 
 /* Sample usage of axios get to copy and redone
 ----------------------------------------------------------------
@@ -51,12 +51,10 @@ export const FetchDataController = (props) => {
     }
   } else {
     return (
-      //TODO REPLACE WITH SELECTED PROGRESS BAR
-      <h3>Loading</h3>
-      // <LinearProgress
-      //   variant="query"
-      //   color="secondary"
-      // />
+      <LinearProgress
+        variant="query"
+        color="secondary"
+      />
     );
   }
 };
