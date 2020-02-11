@@ -14,7 +14,6 @@ import HomePage from "../../page/basic-functionality/home-page/HomePage";
 import DetailsPage from "../../page/basic-functionality/details-page/DetailsPage";
 import AccountPage from "../../page/account/account-page/AccountPage";
 import {
-  CHOSEN_MOVIE,
   PATH_ABOUT,
   PATH_ACCOUNT,
   PATH_CONTACT,
@@ -49,10 +48,7 @@ export const Routes = (props) => {
       />
 
       <Route exact path={PATH_HOME} component={HomePage}/>
-      <PrivateRoute
-        exact path={PATH_DETAILS} component={DetailsPage}
-        redirectPath={PATH_HOME} privacyCondition={SessionStorageGetItem(CHOSEN_MOVIE)}
-      />
+      <Route exact path={PATH_DETAILS} component={DetailsPage}/>
       <Route exact path={PATH_SEARCH} component={SearchPage}/>
       <PrivateRoute
         exact path={PATH_RESULT} component={ResultPage}
