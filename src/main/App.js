@@ -1,5 +1,5 @@
 import React, {useContext, useState} from "react";
-import {BrowserRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 import Routes from "./controller/Routes";
 import {AppContext} from "./controller/ContextProvider";
 import {logoutUser} from "./controller/AccountController";
@@ -35,7 +35,7 @@ export const App = (props) => {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline/>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar
           msg="Film Website"
           isDarkMode={isDarkMode}
@@ -45,7 +45,7 @@ export const App = (props) => {
         >
           <Routes/>
         </Navbar>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 };

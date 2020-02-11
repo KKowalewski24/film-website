@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {useForm} from "react-hook-form";
 import {SessionStorageSaveItem} from "../../../main/controller/StorageController";
 import {PATH_RESULT, SEARCHED_MOVIE_DATA} from "../../../constants";
@@ -9,16 +9,19 @@ import Button from "@material-ui/core/Button";
 import SearchIcon from "@material-ui/icons/Search";
 import "../../../index.css";
 import GlobalStyles from "../../../main/GlobalStyles";
+import {Redirect} from "react-router-dom";
 
 export const SearchPage = (props) => {
 
   /*----------------------- VARIABLE REGION -----------------------*/
+  const [isRedirect, setIsRedirect] = useState(false);
   const {register, handleSubmit} = useForm();
   const globalStyles = GlobalStyles();
 
   const onSubmit = (data) => {
     SessionStorageSaveItem(SEARCHED_MOVIE_DATA, data);
-    document.location.replace(PATH_RESULT);
+    // document.location.replace(PATH_RESULT);
+    setIsRedirect(true);
   };
 
   /*------------------------ RETURN REGION ------------------------*/
@@ -64,6 +67,7 @@ export const SearchPage = (props) => {
         </Button>
 
       </form>
+      {isRedirect ? <Redirect to={PATH_RESULT}/> : null}
     </div>
   );
 };
