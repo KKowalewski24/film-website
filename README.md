@@ -26,6 +26,10 @@ so the only efficient way to store favourites movies was to store them in own da
 making get request in loop based on movies ID. Making request in loop would easily use the limit
 of request per day for free plan. There is one disadvantage because movies in list of favourites of 
 chosen user are not automatically updated so all new updates are not included in this list.
+* The overall gitflow has been disturbed because of a few issues that were really hard to find. 
+There were also made a few mistakes in git rebase and merge operations. That's why I decided to 
+move code to new repo to improve finding  these issues step by step which was a great idea 
+and the fastest way to clean up project.
 
 ### Firebase Rules
 ```
