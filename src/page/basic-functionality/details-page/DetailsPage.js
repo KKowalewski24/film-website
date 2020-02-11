@@ -1,10 +1,10 @@
 import React from "react";
 import propTypes from "prop-types";
 
-export const HomePage = (props) => {
+export const DetailsPage = (props) => {
 
   /*----------------------- VARIABLE REGION -----------------------*/
-
+  //TODO
   /*------------------------ RETURN REGION ------------------------*/
   return (
     <>
@@ -13,6 +13,7 @@ export const HomePage = (props) => {
   );
 };
 
-HomePage.propTypes = {};
+DetailsPage.propTypes = {};
 
-export default HomePage;
+export default DetailsPage;
+    
