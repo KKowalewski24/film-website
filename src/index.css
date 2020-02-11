@@ -1,6 +1,10 @@
 :root {
+    --material-blue-500: #2196f3;
+    --material-grey-700: #616161;
+    --material-grey-800: #424242;
     --max-width-sm: 420px;
     --max-width-md: 700px;
+    --max-width-lg: 900px;
 }
 
 * {
@@ -22,6 +26,10 @@
     .custom-container-md {
         max-width: var(--max-width-md) !important;
     }
+
+    .custom-container-lg {
+        max-width: var(--max-width-lg) !important;
+    }
 }
 
 @media (min-width: 576px) {
@@ -31,6 +39,10 @@
 
     .custom-container-md {
         max-width: var(--max-width-md) !important;
+    }
+
+    .custom-container-lg {
+        max-width: var(--max-width-lg) !important;
     }
 }
 
@@ -42,6 +54,10 @@
     .custom-container-md {
         max-width: var(--max-width-md) !important;
     }
+
+    .custom-container-lg {
+        max-width: var(--max-width-lg) !important;
+    }
 }
 
 @media (min-width: 992px) {
@@ -51,6 +67,10 @@
 
     .custom-container-md {
         max-width: var(--max-width-md) !important;
+    }
+
+    .custom-container-lg {
+        max-width: var(--max-width-lg) !important;
     }
 }
 
@@ -62,10 +82,14 @@
     .custom-container-md {
         max-width: var(--max-width-md) !important;
     }
+
+    .custom-container-lg {
+        max-width: var(--max-width-lg) !important;
+    }
 }
 
 .custom-margin-top-4 {
-    margin-top: 4rem;
+    margin-top: 4rem !important;
 }
 
 .custom-margin-text {
@@ -75,4 +99,20 @@
 
 .custom-font-size-7 {
     font-size: 7rem !important;
+}
+
+.custom-font-size-9 {
+    font-size: 9rem !important;
+}
+
+.custom-font-size-0-8 {
+    font-size: 0.8rem !important;
+}
+
+.custom-border {
+    border-width: 0.11rem !important;
+}
+
+.custom-text-pre-wrap {
+    white-space: pre-wrap;
 }
