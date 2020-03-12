@@ -14,8 +14,7 @@ export const ContactPage = (props) => {
         title={"Contact"}
         content={
           "Kamil Kowalewski\n" +
-          "Email: KamilKowalewski@gmail.com\n" +
-          "GitHub: KKowalewski24\n"
+          "Email: KamilKowalewski@gmail.com\n"
         }
         backgroundColorStyles={globalStyles.materialBlueBackground}
         isContentCentered={true}
